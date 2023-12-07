@@ -9,11 +9,8 @@ start_time = time.time()
 
 image_array, image_classes = get_images.convert_image_and_class_set_to_np_arrays('images')
 
-x_train, x_test, y_train, y_test = train_test_split(image_array,
-                                                    image_classes,
-                                                    test_size=0.20,
-                                                    random_state=1,
-                                                    shuffle=True)
+# attempt 1
+x_train, x_test, y_train, y_test = train_test_split(image_array, image_classes, test_size=0.20, random_state=1, shuffle=True)
 
 print(x_train.shape) # expected to output 4d array (batch size, height, width, number of colour channels e.g. 3 for RBG)
 
@@ -37,8 +34,10 @@ print(y_test[0:10])
 accuracy_score = accuracy_score(y_test, y_pred)
 conf_mat = confusion_matrix(y_test, y_pred)
 
+print(accuracy_score)
 print(conf_mat)
 
 end_time = time.time()
 
 time_taken_minutes = (end_time - start_time)/60
+print(time_taken_minutes)
