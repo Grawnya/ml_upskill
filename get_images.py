@@ -19,19 +19,19 @@ def download_images(request):
                         limit=20, 
                         output_dir='images', 
                         force_replace=False)
-    
 
-requests = ['laptop computer',
-            'computer monitor',
-            'computer mouse',
-            'soccer ball',
-            'bee',
-            'locomotive train',
-            'letter m',
-            'letter t']
+def process_for_downloading():
+    requests = ['laptop computer',
+                'computer monitor',
+                'computer mouse',
+                'soccer ball',
+                'bee',
+                'locomotive train',
+                'letter m',
+                'letter t']
 
-for request in requests:
-    download_images(request)
+    for request in requests:
+        download_images(request)
 
 # based on neural network example, the images should be the same size
 def convert_image_and_class_set_to_np_arrays(folder):
@@ -57,8 +57,3 @@ def convert_image_and_class_set_to_np_arrays(folder):
     image_classes_creation = np.array(classes)
 
     return image_array_creation, image_classes_creation
-
-image_array, image_classes = convert_image_and_class_set_to_np_arrays('images')
-
-print(image_array[0])
-print(image_classes[0])
