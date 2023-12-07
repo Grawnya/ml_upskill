@@ -30,9 +30,8 @@ requests = ['laptop computer',
             'letter m',
             'letter t']
 
-# comment out below once completed if process is to be repeated
-# for request in requests:
-#     download_images(request)
+for request in requests:
+    download_images(request)
 
 # based on neural network example, the images should be the same size
 def convert_image_and_class_set_to_np_arrays(folder):
