@@ -8,3 +8,4 @@
 
 ## Development Bugs:
 * Error when trying to resize, but one image was of type `.gif`.
+* MLPClassifier expected <= 2d array, [fixed this by reshaping](https://stackoverflow.com/questions/34972142/sklearn-logistic-regression-valueerror-found-array-with-dim-3-estimator-expec).
