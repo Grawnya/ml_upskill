@@ -5,6 +5,7 @@
 * Image size influence: [How to Pick the Optimal Image Size for Training Convolution Neural Network?](https://medium.com/analytics-vidhya/how-to-pick-the-optimal-image-size-for-training-convolution-neural-network-65702b880f05)
 * Imread OpenCV Functionality: [OpenCV Docs](https://docs.opencv.org/4.x/d4/da8/group__imgcodecs.html#ga288b8b3da0892bd651fce07b3bbd3a56)
 * RGB Conversion: [Matplotlib requires RGB](https://stackoverflow.com/questions/54959387/rgb-image-display-in-matplotlib-plt-imshow-returns-a-blue-image)
+* Overfitting/Underfitting info: [Fighting Overfitting With L1 or L2 Regularization: Which One Is Better?](https://neptune.ai/blog/fighting-overfitting-with-l1-or-l2-regularization)
 
 ## Development Bugs:
 * Error when trying to resize, but one image was of type `.gif`.
@@ -24,3 +25,7 @@
     * Accuracy: 0.375
     * Time Taken: 3.14 mins
 * Attempt 5: ran model again to see if shuffle still has a large impact
+    * Accuracy: 0.5
+    * Time Taken: 2.76 mins
+* Attempt 6: will investigate over/underfitting
+    * Realised that the data is overfitting but is slowly converging. This insinuates that with a much larger datatset than 20 images of each, they might eventually converge and the accuracy of the model will increase.
