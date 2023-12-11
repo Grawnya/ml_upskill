@@ -20,4 +20,7 @@
 * Attempt 3: Ran model again to see further improvement - wanted to judge if a different shuffle had an impact
     * Accuracy: 0.46875
     * Time Taken: 6.63 mins
-* Attempt 4: will revert to image 300 height 
+* Attempt 4: will revert to image 300 height and changed test size to 0.1
+    * Accuracy: 0.375
+    * Time Taken: 3.14 mins
+* Attempt 5: ran model again to see if shuffle still has a large impact

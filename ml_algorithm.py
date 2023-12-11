@@ -11,7 +11,7 @@ start_time = time.time()
 image_array, image_classes = get_images.convert_image_and_class_set_to_np_arrays('images')
 
 # attempt 1
-x_train, x_test, y_train, y_test = train_test_split(image_array, image_classes, test_size=0.20, random_state=1, shuffle=True)
+x_train, x_test, y_train, y_test = train_test_split(image_array, image_classes, test_size=0.10, random_state=1, shuffle=True)
 
 print(x_train.shape) # expected to output 4d array (batch size, height, width, number of colour channels e.g. 3 for RBG)
 
