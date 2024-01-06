@@ -1,5 +1,6 @@
 # ml_upskill
 The GitHub link can be found [here](https://github.com/Grawnya/ml_upskill).
+The final Google slides presentation can be found [here](https://docs.google.com/presentation/d/1NQOqpgqDrBUUA7o7_vlmtV0YjWHutE8XFvvF0Ei09fE/edit?usp=sharing).
 
 ## Sources: 
 * To get images: [A simple way to collect your deep learning image dataset](https://medium.com/analytics-vidhya/a-simple-way-to-collect-your-deep-learning-image-dataset-4ead47b6826c)
